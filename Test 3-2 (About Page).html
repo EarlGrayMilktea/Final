@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Website</title>
+    <link rel="stylesheet" href="Test 3-2 CSS.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+<section class="header">
+    <nav> 
+        <a href="index.html"><img src="Image/Logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fas fa-rectangle-xmark" style="color: #000000;" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ARTWORKS</a></li>
+                <li><a href="">COMMISSIONS</a></li>
+                <li><a href="">ABOUT</a></li>
+            </ul>
+        </div>
+        <i class="fas fa-bars" style="color: #000000;" onclick="showMenu()"></i>
+    </nav>  
+    <div class="text-box">  
+        <h1>About Me</h1>
+    </div>
+</section>
+
+<!----about me content----->
+
+<section class="about me">
+    <div class="row">
+        <div class="about-col">
+            <h1>Animating Dreams: Where Learning and Creativity Bring Characters to Life!</h1>
+            <p>Greetings, art enthusiasts! I am Eizo, an artist on a never-ending quest to capture the beauty of the world through my creative vision. With brushes as my companions and colors as my language, I aim to evoke emotions, ignite imaginations, and leave a lasting impression. Join me on this artistic odyssey as I share my passion, stories, and artistic journey with you. Welcome to the vivid realm of my artistry.</p>
+            <a href="" class="hero-btn orange-btn"> Look Me up</a>
+        </div>
+        <div class="about-col">
+            <img src="Image/2nd.jpg"
+        </div>
+    </div>
+</section>
+<!------Footer----->
+
+<section class="footer"
+    <h4>About The Artist</h4>
+    <P>Welcome to the world of animation through the eyes of a passionate student. I am an aspiring animation enthusiast, eager to explore the limitless possibilities of bringing characters and stories to life. Join me on this exhilarating journey as I dive into the art of animation, honing my skills, unraveling the secrets of motion, and embracing the power of visual storytelling. Together, let's embark on a quest of learning, creativity, and endless inspiration. Welcome to the animated realm of this aspiring student.</P>
+
+<!------JavaScript for Toggle Menu-----  -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
